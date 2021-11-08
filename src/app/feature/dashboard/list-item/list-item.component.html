@@ -1,0 +1,44 @@
+<div class="item-card" *ngIf="!!item">
+  <div>
+    <label>{{ item.id }}</label>
+  </div>
+  <br>
+  <div>
+    <label>{{ item.title }}</label>
+  </div>
+  <br>
+  <div>
+    <label>{{ item.author }}</label>
+  </div>
+  <br>
+  <div>
+    <label>{{ item.isbn }}</label>
+  </div>
+  <br>
+  <div>
+    <label>{{ item.commonCover }}</label>
+  </div>
+  <br>
+  <div>
+    <label>{{ item.publisher }}</label>
+  </div>
+  <br>
+  <div>
+    <label>{{ item.year }}</label>
+  </div>
+
+  <!-- <div class="actions">
+    <div class="first-column">
+      <div class="checkbox" (click)="markAsDone.emit(item.id)">
+        <input type="checkbox" [checked]="item.done">
+      <label for="checkbox"><span>Feito</span></label>
+    </div>
+  </div> -->
+
+  <div class="second-column">
+    <span *ngIf="false">Carregando</span>
+    <u *ngIf="true" (click)="remove.emit(item.id)">Deletar</u>
+  </div>
+
+  <!-- </div> -->
+<!-- </div> -->

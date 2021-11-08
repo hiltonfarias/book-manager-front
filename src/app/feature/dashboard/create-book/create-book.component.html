@@ -1,0 +1,54 @@
+<h3>Criar novo Book</h3>
+<!--
+<input [formControl]="titleControl">
+
+
+
+<button *ngIf="(creating$ | async)===true" class="primary" (click)="save()">Salvar</button>
+
+
+
+<span *ngIf="creating$ | async">Carregando</span> -->
+
+<form [formGroup]="form" (ngSubmit)="save()">
+  <label>Author</label>
+  <input formControlName="authorControl">
+
+  <label>Title</label>
+  <input formControlName="titleControl">
+
+  <label>Publisher</label>
+  <input formControlName="publisherControl">
+
+  <label>Language</label>
+  <input formControlName="languageControl">
+
+  <label>CommonCover</label>
+  <input formControlName="commonCoverControl">
+
+  <label>Isbn</label>
+  <input formControlName="isbnControl">
+
+  <label>Year</label>
+  <input formControlName="yearControl">
+
+  <label>Login</label>
+  <input formControlName="loginControl">
+
+  <label>Senha</label>
+  <input formControlName="passwordControl">
+
+  <label>Nome completo</label>
+  <input formControlName="fullNameControl">
+
+  <label>Email</label>
+  <input formControlName="emailControl">
+
+  <label>Data de nascimento</label>
+  <input formControlName="birthDateControl">
+
+  <label>Ativo</label>
+  <input formControlName="activeControl">
+
+  <button class="primary">Salvar</button>
+</form>
